@@ -87,6 +87,7 @@ label{
     }
     button{
         margin-left: 20%;
+        border-radius: 10px;
         margin-top: -7.5%;
     }
     .output{
