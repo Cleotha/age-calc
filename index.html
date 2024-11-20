@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="age.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+    <script src="age.js"></script>
+    <title>AGE CALCULATOR</title>
+</head>
+<body>
+    <div class="container">
+        <form action="calc.php" class="fill">
+            <div class="input">
+                <div>
+                    <label for="day">DAY</label><br>
+                    <input type="text" name="Day" placeholder="DD" min="1" maxlength="2" max="31">
+                </div>
+                <div>
+                    <label for="month">MONTH</label><br>
+                    <input type="text" name="Month" placeholder="MM" min="1" maxlength="2" max="12">
+                </div>
+                <div>
+                    <label for="year">YEAR</label><br>
+                    <input type="text" name="Year" placeholder="YY" min="1" maxlength="4">
+                </div>
+            </div>
+        </form>
+        <div class="arrow">
+            <button><img src="icon-arrow.png" alt="output"></button>
+        </div>
+        <div class="output">
+            <h1><span class="dash">- -</span>years</h1>
+            <h1><span class="dash">- -</span>months</h1>
+            <h1><span class="dash">- -</span>days</h1>
+        </div>
+    </div>
+</body>
+</html>
