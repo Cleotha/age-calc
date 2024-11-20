@@ -87,6 +87,7 @@ label{
     }
     button{
         width: 30px;
+        border-radius: 50%;
         margin-left: 47%;
         margin-top: -8%;
     }
