@@ -89,4 +89,11 @@ label{
         margin-left: 47%;
         margin-top: -7.5%;
     }
+    .output{
+        font-size: 20px;
+    }
+    img{
+        width: 10%;
+        height: 2rem;
+    }
 }
