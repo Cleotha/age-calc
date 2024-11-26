@@ -6,35 +6,38 @@
     <link rel="stylesheet" href="age.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
     rel="stylesheet">
-    <script src="age.js"></script>
     <title>AGE CALCULATOR</title>
 </head>
 <body>
     <div class="container">
         <form action="calc.php" class="fill">
             <div class="input">
-                <div>
+                <div class="field">
                     <label for="day">DAY</label><br>
-                    <input type="text" name="Day" placeholder="DD" min="1" maxlength="2" max="31">
+                    <input type="number" name="Day" id="day" placeholder="DD" min="1" max="2" required>
+                    <small class="error-day"></small>
                 </div>
-                <div>
+                <div class="field">
                     <label for="month">MONTH</label><br>
-                    <input type="text" name="Month" placeholder="MM" min="1" maxlength="2" max="12">
+                    <input type="number" name="Month" id="month" placeholder="MM" min="1" max="2" required>
+                    <small class="error-month"></small>
                 </div>
-                <div>
+                <div class="field">
                     <label for="year">YEAR</label><br>
-                    <input type="text" name="Year" placeholder="YY" min="1" maxlength="4">
+                    <input type="number" name="Year" id="year" placeholder="YY" min="1" max="4" required>
+                    <small class="error-year"></small>
                 </div>
             </div>
         </form>
-        <div class="arrow">
-            <button><img src="icon-arrow.png" alt="output"></button>
+        <div>
+            <button class="submit-btn"><img src="icon-arrow.png" alt="output"></button>
         </div>
         <div class="output">
-            <h1><span class="dash">- -</span>years</h1>
-            <h1><span class="dash">- -</span>months</h1>
-            <h1><span class="dash">- -</span>days</h1>
+            <h1><span class="output-year">- -</span>years</h1>
+            <h1><span class="output-month">- -</span>months</h1>
+            <h1><span class="output-day">- -</span>days</h1>
         </div>
     </div>
+    <script src="age.js"></script>
 </body>
 </html>
